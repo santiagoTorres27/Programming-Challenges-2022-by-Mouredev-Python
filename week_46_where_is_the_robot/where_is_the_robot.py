@@ -15,3 +15,16 @@
 #   secuencia de pasos gira 90 grados en el sentido contrario a las agujas
 #   del reloj.
 #
+
+from classes import Robot
+
+
+def move_robot(robot, movements):
+    for i in movements:
+        robot.move(i)
+        print(robot)
+
+
+my_robot = Robot()
+my_movements = [10, 5, -2]
+move_robot(my_robot, my_movements)
